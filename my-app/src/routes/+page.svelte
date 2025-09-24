@@ -1,3 +1,10 @@
-<svelte:head>
-	<meta name="description" content="Un site web à la mémoire de Nestor Schoonbroodt">
-</svelte:head>
+<script lang="ts">
+  let name = $state('Jonathan')
+  let test = 'test'
+</script>
+
+{#each examples as example}
+  {#if example}
+    {example}
+  {/if}
+{/each}
