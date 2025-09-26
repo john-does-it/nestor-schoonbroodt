@@ -142,7 +142,7 @@
     href={CarteSouvenir}
     title="Télécharger la carte souvenir au format PDF"
   >
-    Carte souvenir ⭳
+    Télécharger la carte souvenir
   </a>
 </header>
 <main>
