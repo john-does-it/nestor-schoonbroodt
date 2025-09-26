@@ -6,34 +6,25 @@
   let invisibleTextAnchor: HTMLAnchorElement
   let galleryContainer: HTMLElement
 
-  function toggleTransition(event: MouseEvent) {
-    if (event.target && event.target instanceof HTMLButtonElement) {
-      if (window.innerWidth < 640) {
-        scrollTo({
-          top: invisibleTextAnchor.offsetTop - textSelectorContainer.offsetHeight
-        })
-      } else {
-        scrollTo({
-          top: invisibleTextAnchor.offsetTop - 80
-        })
-      }
+  async function toggleTransition(event: MouseEvent) {
+    const btn = (event.target as HTMLElement).closest('button') as HTMLButtonElement | null
+    if (!btn) return
 
-      textSelectorContainer.querySelectorAll('button').forEach((button) => {
-        if (button.id === (event.target as HTMLButtonElement).id) {
-          button.classList.add('active')
-        } else {
-          button.classList.remove('active')
-        }
-      })
-
-      textsContainer.querySelectorAll('.text-container').forEach((container) => {
-        if (container.getAttribute('name') === (event.target as HTMLButtonElement).id) {
-          container.classList.add('active')
-        } else {
-          container.classList.remove('active')
-        }
-      })
+    for (const button of textSelectorContainer.querySelectorAll('button')) {
+      button.classList.toggle('active', button.id === btn.id)
     }
+    for (const container of textsContainer.querySelectorAll<HTMLElement>('.text-container')) {
+      container.classList.toggle('active', container.getAttribute('name') === btn.id)
+    }
+
+    const isDesktop = window.matchMedia('(min-width: 640px)').matches
+    const offset = isDesktop ? 40 : textSelectorContainer.offsetHeight
+
+    const rect = invisibleTextAnchor.getBoundingClientRect()
+    const targetY = window.scrollY + rect.top - offset
+
+    const scroller = document.scrollingElement || document.documentElement
+    scroller.scrollTo({ top: targetY, behavior: 'smooth' })
   }
 
   function rotateAndOrderImage() {
@@ -147,6 +138,7 @@
         moment de recueillement et de souvenir.
       </p>
     </wrapper-container>
+    <invisible-text-anchor bind:this={invisibleTextAnchor}></invisible-text-anchor>
     <text-selector-container>
       <!-- svelte-ignore a11y_click_events_have_key_events -->
       <!-- svelte-ignore a11y_no_noninteractive_element_interactions -->
@@ -168,7 +160,6 @@
         </li>
       </ul>
     </text-selector-container>
-    <invisible-text-anchor bind:this={invisibleTextAnchor}></invisible-text-anchor>
     <wrapper-container class="text-container active" name="il-meurt-lentement">
       <h3>Il Meurt Lentement</h3>
       <figure>
@@ -388,11 +379,11 @@
     <!-- svelte-ignore a11y_no_static_element_interactions -->
     <!-- svelte-ignore a11y_click_events_have_key_events -->
     <gallery-container bind:this={galleryContainer} onclick={(event) => reorderImage(event)}>
-      <img src="/images/picture.avif" alt="Nestor Schoonbroodt" width="960" />
-      <img src="/images/picture-1.avif" alt="Nestor Schoonbroodt" width="640" />
-      <img src="/images/picture-2.avif" alt="Nestor Schoonbroodt" width="480" />
-      <img src="/images/picture-3.avif" alt="Nestor Schoonbroodt" width="960" />
       <img src="/images/picture-4.avif" alt="Nestor Schoonbroodt" width="480" />
+      <img src="/images/picture-2.avif" alt="Nestor Schoonbroodt" width="560" />
+      <img src="/images/picture-1.avif" alt="Nestor Schoonbroodt" width="640" />
+      <img src="/images/picture.avif" alt="Nestor Schoonbroodt" width="960" />
+      <img src="/images/picture-3.avif" alt="Nestor Schoonbroodt" width="1024" />
     </gallery-container>
     <button onclick={() => showNextImageInQueue()}>Photo suivante →</button>
   </pictures-container>
@@ -497,9 +488,9 @@
     margin-top: 1em;
   }
 
-  main {
+  /* main {
     overflow-x: hidden;
-  }
+  } */
 
   wrapper-container {
     display: block;
@@ -520,6 +511,7 @@
     align-items: center;
     margin: 2em auto;
     padding: 0 1em;
+    position: relative;
   }
 
   texts-container {
@@ -596,6 +588,7 @@
 
   pictures-container {
     position: relative;
+    overflow-x: hidden;
 
     gallery-container {
       width: 100%;
