@@ -101,6 +101,14 @@
   })
 </script>
 
+<svelte:head>
+  <title>Nestor Schoonbroodt - site commémoratif</title>
+  <meta
+    name="description"
+    content="Site commémoratif en la mémoire de Nestor Schoonbroodt, décédé le 13 septembre 2025 à Desnié."
+  />
+</svelte:head>
+
 <nav>
   <ul>
     <li><a href="#textes">Textes</a></li>
@@ -108,6 +116,7 @@
     <li><a href="#remerciements">Remerciements</a></li>
   </ul>
 </nav>
+
 <header>
   <!-- prettier-ignore -->
   <video src="/videos/cloud-loop.mp4" autoplay loop muted playsinline disablePictureInPicture></video>
@@ -132,10 +141,10 @@
     <wrapper-container>
       <h2>Textes</h2>
       <p class="introduction">
-        Proches et amis ont souhaité partager quelques paroles qui reflètent ta sensibilité, ta
-        sagesse et l'amour que nous avons pour toi. Ces textes ont résonné comme autant d'échos à ta
-        vie et à l'héritage que tu laisses dans nos cœurs. Ils demeurent ici comme une trace de ce
-        moment de recueillement et de souvenir.
+        Proches et amis ont souhaité partager quelques textes et paroles qui reflètent ta
+        sensibilité, ta sagesse et l'amour que nous avons pour toi. Ces textes ont résonné comme
+        autant d'échos à ta vie et à l'héritage que tu laisses dans nos cœurs. Ils demeurent ici
+        comme une trace de ce moment de recueillement et de souvenir.
       </p>
     </wrapper-container>
     <invisible-text-anchor bind:this={invisibleTextAnchor}></invisible-text-anchor>
@@ -149,12 +158,14 @@
         <li>
           <button id="eloge-funebre"> Eloge Funèbre </button>
         </li>
+        <!-- 
         <li>
           <button id="quelques-mots-de-cathy">Quelques mots de Cathy</button>
         </li>
         <li>
           <button id="quelques-mots-de-philippe">Quelques mots de Philippe</button>
         </li>
+        -->
         <li>
           <button id="quelques-mots-de-andre">Quelques mots de André</button>
         </li>
@@ -273,9 +284,8 @@
             en autodidacte via des cours en correspondance.
           </p>
           <p>
-            Entrepreneur, tu fondes les ateliers <strong>Schoonbroodt Hydraulics</strong>, rue de
-            l'Epargne, qui existent toujours aujourd'hui, avec aux manettes ton fils spirituel,
-            Michel.
+            Entrepreneur, tu fondes les ateliers Schoonbroodt Hydraulics, rue de l'Epargne, qui
+            existent toujours aujourd'hui, avec aux manettes ton fils spirituel, Michel.
           </p>
           <p>
             Et, quand tu as estimé avoir fait le tour du sujet (et surtout, on ne va pas se mentir,
@@ -291,10 +301,9 @@
           <p>
             Rentré en Belgique, contraint et forcé par une Polonaise au caractère bien trempé, tu
             t'es également découvert une passion pour la sculpture, et j'aimais te voir dans ton
-            atelier, sublimer la terre, à l'occasion un bout de cigare, piqué à maman, au bord des
+            atelier, sublimer la terre, à l'occasion un bout de cigare, piqué à maman, au coin des
             lèvres.
           </p>
-
           <p>
             Ces dernières années, elles ont été bien difficiles : marquées par les pertes et le
             handicap…
@@ -316,12 +325,12 @@
             infatigable soif d'aventure et de projets en tout genre. Ce n'était plus une vie…
           </p>
           <p>
-            Mais, jusqu'au bout, tu auras eu la chance d'être bien entouré. Par ta
-            <q>petite Jojo chérie</q>, qui a admirablement veillé sur toi, par tes enfants et
-            petits-enfants, par tes amis. Tu voulais mourir à Desnié, loin des hôpitaux et des
-            maisons de repos, que tu ne savais pas voir en peinture. Et ta volonté a été exaucée. Tu
-            es parti apaisé, en compagnie de ta Jojo, tes enfants (légitimes et spirituels), une
-            petite boule de poil rousse à tes pieds.
+            Mais, jusqu'au bout, tu auras eu la chance d'être bien entouré. Par ta petite Jojo
+            chérie, qui a admirablement veillé sur toi, par tes enfants et petits-enfants, par tes
+            amis. Tu voulais mourir à Desnié, loin des hôpitaux et des maisons de repos, que tu ne
+            savais pas voir en peinture. Et ta volonté a été exaucée. Tu es parti apaisé, en
+            compagnie de ta Jojo, tes enfants (légitimes et spirituels), une petite boule de poil
+            rousse à tes pieds.
           </p>
           <p>
             Aujourd'hui, nous avons tous une pensée pour toi. Et, pour ma part, et je sais ne pas
@@ -331,6 +340,7 @@
         <figcaption><author>Jonathan Schoonbroodt</author></figcaption>
       </figure>
     </wrapper-container>
+    <!-- 
     <wrapper-container class="text-container" name="quelques-mots-de-cathy">
       <h3>Quelques mots de Cathy</h3>
       <figure>
@@ -356,18 +366,31 @@
         </blockquote>
         <figcaption><author>Philippe Schoonbroodt</author></figcaption>
       </figure>
-    </wrapper-container>
+    </wrapper-container> 
+    -->
     <wrapper-container class="text-container" name="quelques-mots-de-andre">
       <h3>Quelques mots de André</h3>
       <figure>
         <blockquote>
+          <p>Nestor,</p>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi voluptatum nobis nihil
-            officia reprehenderit magni maiores praesentium recusandae quibusdam nemo quia ducimus
-            unde nam quam autem, dolores, ea dolorem nisi.
+            En ce jeudi 18 septembre 2025, pour beaucoup de tes amis, une page a été tournée, on
+            n'aura plus le plaisir de converser avec toi, recevoir tes conseils avisés sur de
+            nombreux sujets, échanger sur les voyages, les activités de la vie etc…
           </p>
+          <p>
+            Au début, alors que j'avais 14–15 ans, et dans la situation familiale qui était la
+            mienne, j'ai trouvé un guide, qui m'a pris sous sa protection et a fait de moi un homme,
+            et j'ai toujours voulu être digne de ta confiance.
+          </p>
+          <p>Toujours disponible pour tes amis, tu étais à l'écoute de chacun pour les aider.</p>
+          <p>
+            Pour ma part, je garde le souvenir de plus de 60 ans d'amitiés, des voyages au bout du
+            monde et de la période à la Broutie.
+          </p>
+          <p>Alors, Totor, je te souhaite un repos plein de beaux rêves.</p>
         </blockquote>
-        <figcaption><author>André Loubelle</author></figcaption>
+        <figcaption><author>André « Dédé » Loubelle</author></figcaption>
       </figure>
     </wrapper-container>
   </texts-container>
@@ -379,13 +402,25 @@
     <!-- svelte-ignore a11y_no_static_element_interactions -->
     <!-- svelte-ignore a11y_click_events_have_key_events -->
     <gallery-container bind:this={galleryContainer} onclick={(event) => reorderImage(event)}>
-      <img src="/images/picture-4.avif" alt="Nestor Schoonbroodt" width="480" />
-      <img src="/images/picture-2.avif" alt="Nestor Schoonbroodt" width="560" />
-      <img src="/images/picture-1.avif" alt="Nestor Schoonbroodt" width="640" />
-      <img src="/images/picture.avif" alt="Nestor Schoonbroodt" width="960" />
-      <img src="/images/picture-3.avif" alt="Nestor Schoonbroodt" width="1024" />
+      <img src="images/nestor-1.jpg" alt="Nestor Schoonbroodt" loading="lazy" />
+      <img src="images/nestor-2.jpg" alt="Nestor Schoonbroodt" loading="lazy" />
+      <img src="images/nestor-3.jpg" alt="Nestor Schoonbroodt" loading="lazy" />
+      <img src="images/nestor-4.jpg" alt="Nestor Schoonbroodt" loading="lazy" />
+      <img src="images/nestor-5.jpg" alt="Nestor Schoonbroodt" loading="lazy" />
+      <img src="images/nestor-6.jpg" alt="Nestor Schoonbroodt" loading="lazy" />
+      <img src="images/nestor-7.jpg" alt="Nestor Schoonbroodt" loading="lazy" />
+      <img src="images/nestor-8.jpg" alt="Nestor Schoonbroodt" loading="lazy" />
+      <img src="images/nestor-9.jpg" alt="Nestor Schoonbroodt" loading="lazy" />
+      <img src="images/nestor-10.jpg" alt="Nestor Schoonbroodt" loading="lazy" />
+      <img src="images/nestor-11.jpg" alt="Nestor Schoonbroodt" loading="lazy" />
+      <img src="images/nestor-12.jpg" alt="Nestor Schoonbroodt" loading="lazy" />
+      <img src="images/nestor-13.jpg" alt="Nestor Schoonbroodt" loading="lazy" />
+      <img src="images/nestor-14.jpg" alt="Nestor Schoonbroodt" loading="lazy" />
+      <img src="images/nestor-15.jpg" alt="Nestor Schoonbroodt" loading="lazy" />
+      <img src="images/nestor-16.jpg" alt="Nestor Schoonbroodt" loading="lazy" />
+      <img src="images/nestor-17.jpg" alt="Nestor Schoonbroodt" loading="lazy" />
     </gallery-container>
-    <button onclick={() => showNextImageInQueue()}>Photo suivante →</button>
+    <button onclick={() => showNextImageInQueue()}>Photo suivante</button>
   </pictures-container>
   <!-- remerciements -->
   <thanks-container id="remerciements">
@@ -487,10 +522,6 @@
     border-radius: 8px;
     margin-top: 1em;
   }
-
-  /* main {
-    overflow-x: hidden;
-  } */
 
   wrapper-container {
     display: block;
@@ -602,6 +633,8 @@
     img {
       position: absolute;
       max-width: 100%;
+      height: auto;
+      max-height: 780px;
       display: block;
       height: auto;
       left: 0;
@@ -613,8 +646,19 @@
       appearance: none;
       border: none;
       background: none;
+      font-style: italic;
       cursor: pointer;
       z-index: 999;
+
+      &::after {
+        display: inline-block;
+        content: '→';
+        margin-left: 0.5em;
+      }
+
+      &:hover::after {
+        animation: slideRightAndLeft 3s ease-in-out infinite;
+      }
     }
   }
 </style>
