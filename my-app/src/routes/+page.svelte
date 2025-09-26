@@ -153,21 +153,21 @@
       <!-- svelte-ignore a11y_no_noninteractive_element_interactions -->
       <ul bind:this={textSelectorContainer} onclick={(event) => toggleTransition(event)}>
         <li>
-          <button class="active" id="il-meurt-lentement"> Il meurt lentement </button>
+          <button class="active" id="il-meurt-lentement">Il meurt lentement</button>
         </li>
         <li>
-          <button id="eloge-funebre"> Eloge Funèbre </button>
+          <button id="eloge-jonathan">Jonathan</button>
         </li>
         <!-- 
         <li>
-          <button id="quelques-mots-de-cathy">Quelques mots de Cathy</button>
+          <button id="cathy">Cathy</button>
         </li>
         <li>
-          <button id="quelques-mots-de-philippe">Quelques mots de Philippe</button>
+          <button id="philippe">Philippe</button>
         </li>
         -->
         <li>
-          <button id="quelques-mots-de-andre">Quelques mots de André</button>
+          <button id="andre">André</button>
         </li>
       </ul>
     </text-selector-container>
@@ -223,8 +223,8 @@
         <figcaption><author>Pablo Neruda</author></figcaption>
       </figure>
     </wrapper-container>
-    <wrapper-container class="text-container" name="eloge-funebre">
-      <h3>Eloge funèbre</h3>
+    <wrapper-container class="text-container" name="eloge-jonathan">
+      <h3>Eloge de Jonathan</h3>
       <figure>
         <blockquote>
           <p>Papa,</p>
@@ -341,8 +341,8 @@
       </figure>
     </wrapper-container>
     <!-- 
-    <wrapper-container class="text-container" name="quelques-mots-de-cathy">
-      <h3>Quelques mots de Cathy</h3>
+    <wrapper-container class="text-container" name="cathy">
+      <h3>Témoignage de Cathy</h3>
       <figure>
         <blockquote>
           <p>
@@ -354,8 +354,8 @@
         <figcaption><author>Marie-Catherine Schoonbroodt</author></figcaption>
       </figure>
     </wrapper-container>
-    <wrapper-container class="text-container" name="quelques-mots-de-philippe">
-      <h3>Quelques mots de Philippe</h3>
+    <wrapper-container class="text-container" name="philippe">
+      <h3>Témoignage de Philippe</h3>
       <figure>
         <blockquote>
           <p>
@@ -368,8 +368,8 @@
       </figure>
     </wrapper-container> 
     -->
-    <wrapper-container class="text-container" name="quelques-mots-de-andre">
-      <h3>Quelques mots de André</h3>
+    <wrapper-container class="text-container" name="andre">
+      <h3>Témoignage de Dédé</h3>
       <figure>
         <blockquote>
           <p>Nestor,</p>
