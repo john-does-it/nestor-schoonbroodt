@@ -172,10 +172,10 @@
         <li>
           <button id="cathy">Cathy</button>
         </li>
+        -->
         <li>
           <button id="philippe">Philippe</button>
         </li>
-        -->
         <li>
           <button id="andre">André</button>
         </li>
@@ -364,20 +364,30 @@
         <figcaption><author>Marie-Catherine Schoonbroodt</author></figcaption>
       </figure>
     </wrapper-container>
+    -->
     <wrapper-container class="text-container" name="philippe">
       <h3>Témoignage de Philippe</h3>
       <figure>
         <blockquote>
+          <p>Papa,</p>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi voluptatum nobis nihil
-            officia reprehenderit magni maiores praesentium recusandae quibusdam nemo quia ducimus
-            unde nam quam autem, dolores, ea dolorem nisi.
+            Tu as eu une vie intense et passionnante, mais à 90 ans ta santé s'est dégradée. Tu as
+            dû prendre le lit et tu ne l'as plus quitté.
           </p>
+          <p>
+            Ton souhait était de finir tes jours paisiblement à ton domicile de Desnié. C'est ce qui
+            est arrivé. Parce que tu as eu la chance d'avoir une compagne hors du commun.
+          </p>
+          <p>Pendant 2 longues années, elle t'a veillé, elle t'a soigné, elle t'a chouchouté.</p>
+          <p>
+            Pendant 2 longues années, elle a animé ta vie avec de gentilles taquineries pleines
+            d'humour et pleines d'amour.
+          </p>
+          <p>Jocelyne, 1000 fois merci !</p>
         </blockquote>
         <figcaption><author>Philippe Schoonbroodt</author></figcaption>
       </figure>
-    </wrapper-container> 
-    -->
+    </wrapper-container>
     <wrapper-container class="text-container" name="andre">
       <h3>Témoignage de André</h3>
       <figure>
