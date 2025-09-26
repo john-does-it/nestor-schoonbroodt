@@ -399,7 +399,7 @@
             nombreux sujets, échanger sur les voyages, les activités de la vie etc…
           </p>
           <p>
-            Au début, alors que j'avais 14–15 ans, et dans la situation familiale qui était la
+            Au début, alors que j'avais 14 ou 15 ans, et dans la situation familiale qui était la
             mienne, j'ai trouvé un guide, qui m'a pris sous sa protection et a fait de moi un homme,
             et j'ai toujours voulu être digne de ta confiance.
           </p>
