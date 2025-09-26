@@ -1,6 +1,8 @@
 <script lang="ts">
   import { onMount } from 'svelte'
 
+  import CarteSouvenir from '$lib/assets/carte-souvenir-nestor-schoonbroodt.pdf'
+
   let textsContainer: HTMLElement
   let textSelectorContainer: HTMLElement
   let invisibleTextAnchor: HTMLAnchorElement
@@ -134,6 +136,9 @@
     Né à Battice le <date>15/06/1933</date> et décédé à Desnié le <date>13/09/2025</date>
   </p>
   <small>Fondateur de Schoonbroodt Hydraulics SA</small>
+  <a download="carte-souvenir-nestor-schoonbroodt.pdf" target="_blank" href={CarteSouvenir}>
+    Carte souvenir ⭳
+  </a>
 </header>
 <main>
   <!-- textes -->
@@ -369,7 +374,7 @@
     </wrapper-container> 
     -->
     <wrapper-container class="text-container" name="andre">
-      <h3>Témoignage de Dédé</h3>
+      <h3>Témoignage de André</h3>
       <figure>
         <blockquote>
           <p>Nestor,</p>
@@ -501,35 +506,39 @@
     z-index: 100;
     padding: 3em 1em 4em;
     box-sizing: border-box;
-  }
 
-  header blockquote {
-    position: relative;
-    text-align: center;
+    blockquote {
+      position: relative;
+      text-align: center;
 
-    &::before {
-      position: absolute;
-      left: -0.5em;
-      content: '“';
-      font-size: 4em;
-      line-height: 1;
-      vertical-align: -0.4em;
-      margin-right: 0.1em;
+      &::before {
+        position: absolute;
+        left: -0.5em;
+        content: '“';
+        font-size: 4em;
+        line-height: 1;
+        vertical-align: -0.4em;
+        margin-right: 0.1em;
+      }
     }
-  }
 
-  header video {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.1;
-    z-index: -1;
-  }
+    video {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.1;
+      z-index: -1;
+    }
 
-  header :global(enhanced\:img) {
-    border-radius: 8px;
-    margin-top: 1em;
+    :global(enhanced\:img) {
+      border-radius: 8px;
+      margin-top: 1em;
+    }
+
+    a {
+      margin-top: 1em;
+    }
   }
 
   wrapper-container {
@@ -676,9 +685,5 @@
     text-align: center;
     padding: 2em 1em;
     background-color: #f0f0f0;
-
-    a {
-      color: inherit;
-    }
   }
 </style>
