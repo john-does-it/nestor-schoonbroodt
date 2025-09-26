@@ -136,7 +136,12 @@
     Né à Battice le <date>15/06/1933</date> et décédé à Desnié le <date>13/09/2025</date>
   </p>
   <small>Fondateur de Schoonbroodt Hydraulics SA</small>
-  <a download="carte-souvenir-nestor-schoonbroodt.pdf" target="_blank" href={CarteSouvenir}>
+  <a
+    download="carte-souvenir-nestor-schoonbroodt.pdf"
+    target="_blank"
+    href={CarteSouvenir}
+    title="Télécharger la carte souvenir au format PDF"
+  >
     Carte souvenir ⭳
   </a>
 </header>
