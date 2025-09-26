@@ -401,7 +401,7 @@
     </wrapper-container>
     <!-- svelte-ignore a11y_no_static_element_interactions -->
     <!-- svelte-ignore a11y_click_events_have_key_events -->
-    <gallery-container bind:this={galleryContainer} onclick={(event) => reorderImage(event)}>
+    <gallery-container bind:this={galleryContainer} onclick={(event: Event) => reorderImage(event)}>
       <img src="images/nestor-1.jpg" alt="Nestor Schoonbroodt" />
       <img src="images/nestor-2.jpg" alt="Nestor Schoonbroodt" />
       <img src="images/nestor-3.jpg" alt="Nestor Schoonbroodt" />
