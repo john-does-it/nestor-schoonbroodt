@@ -142,7 +142,7 @@
     href={CarteSouvenir}
     title="Télécharger la carte souvenir au format PDF"
   >
-    Carte souvenir ⭳
+    Télécharger la carte souvenir
   </a>
 </header>
 <main>
@@ -542,7 +542,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      opacity: 0.1;
+      opacity: 0.2;
       z-index: -1;
     }
 
