@@ -121,7 +121,11 @@
 
 <header>
   <!-- prettier-ignore -->
-  <video src="/videos/cloud-loop.mp4" autoplay loop muted playsinline disablePictureInPicture poster=""></video>
+  <video autoplay loop muted playsinline disablePictureInPicture poster="">
+     <source src="/static/videos/clouds-loop.mp4" type="video/webm" />
+    <source src="/static/videos/clouds-loop.mp4" type="video/mp4" />
+    Votre navigateur ne supporte pas la vidéo HTML5.
+  </video>
   <blockquote>
     <p>J'aime les nuages... les nuages qui passent... là-bas... les merveilleux nuages !</p>
     <small><author>Charles Baudelaire</author> - <cite>L'Etranger</cite></small>
