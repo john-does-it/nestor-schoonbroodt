@@ -127,7 +127,7 @@
     <small><author>Charles Baudelaire</author> - <cite>L'Etranger</cite></small>
   </blockquote>
   <enhanced:img
-    src="/static/images/nestor-portrait.jpg"
+    src="/static/images/nestor-portrait.webp"
     alt="Portrait de Nestor Schoonbroodt"
     width="200"
     sizes="min(100vw, 200px)"
@@ -422,130 +422,75 @@
     </wrapper-container>
     <!-- svelte-ignore a11y_no_static_element_interactions -->
     <!-- svelte-ignore a11y_click_events_have_key_events -->
-    <gallery-container
-      bind:this={galleryContainer}
-      onclick={(event: Event) => reorderImage(event)}
-      style="height: auto;"
-    >
-      <enhanced:img
-        src="/static/images/nestor-1.jpg"
-        alt="Nestor Schoonbroodt"
-        width="684"
-        height="780"
-        sizes="min(100vw, 684px)"
-      />
-      <enhanced:img
-        src="/static/images/nestor-2.jpg"
-        alt="Nestor Schoonbroodt"
-        width="1040"
-        height="780"
-        sizes="min(100vw, 1040px)"
-      />
-      <enhanced:img
-        src="/static/images/nestor-3.jpg"
-        alt="Nestor Schoonbroodt"
-        width="1103"
-        height="780"
-        sizes="min(100vw, 1103px)"
-      />
-      <enhanced:img
-        src="/static/images/nestor-4.jpg"
-        alt="Nestor Schoonbroodt"
-        width="1054"
-        height="780"
-        sizes="min(100vw, 1054px)"
-      />
-      <enhanced:img
-        src="/static/images/nestor-5.jpg"
-        alt="Nestor Schoonbroodt"
-        width="1055"
-        height="780"
-        sizes="min(100vw, 1055px)"
-      />
-      <enhanced:img
-        src="/static/images/nestor-6.jpg"
-        alt="Nestor Schoonbroodt"
-        width="904"
-        height="780"
-        sizes="min(100vw, 904px)"
-      />
-      <enhanced:img
-        src="/static/images/nestor-7.jpg"
-        alt="Nestor Schoonbroodt"
-        width="535"
-        height="780"
-        sizes="min(100vw, 535px)"
-      />
-      <enhanced:img
-        src="/static/images/nestor-8.jpg"
-        alt="Nestor Schoonbroodt"
-        width="583"
-        height="780"
-        sizes="min(100vw, 583px)"
-      />
-      <enhanced:img
-        src="/static/images/nestor-9.jpg"
-        alt="Nestor Schoonbroodt"
-        width="574"
-        height="780"
-        sizes="min(100vw, 574px)"
-      />
-      <enhanced:img
-        src="/static/images/nestor-10.jpg"
-        alt="Nestor Schoonbroodt"
-        width="535"
-        height="780"
-        sizes="min(100vw, 535px)"
-      />
-      <enhanced:img
-        src="/static/images/nestor-11.jpg"
-        alt="Nestor Schoonbroodt"
-        width="1165"
-        height="780"
-        sizes="min(100vw, 1165px)"
-      />
-      <enhanced:img
-        src="/static/images/nestor-12.jpg"
-        alt="Nestor Schoonbroodt"
-        width="1113"
-        height="780"
-        sizes="min(100vw, 1113px)"
-      />
-      <enhanced:img
-        src="/static/images/nestor-13.jpg"
-        alt="Nestor Schoonbroodt"
-        width="585"
-        height="780"
-        sizes="min(100vw, 585px)"
-      />
-      <enhanced:img
-        src="/static/images/nestor-14.jpg"
-        alt="Nestor Schoonbroodt"
-        width="679"
-        height="780"
-        sizes="min(100vw, 679px)"
-      />
-      <enhanced:img
-        src="/static/images/nestor-15.jpg"
-        alt="Nestor Schoonbroodt"
-        width="664"
-        height="780"
-        sizes="min(100vw, 664px)"
-      />
-      <enhanced:img
-        src="/static/images/nestor-16.jpg"
-        alt="Nestor Schoonbroodt"
-        width="1040"
-        height="780"
-        sizes="min(100vw, 1040px)"
-      />
-      <enhanced:img
-        src="/static/images/nestor-17.jpg"
-        alt="Nestor Schoonbroodt"
-        width="1124"
-        height="780"
-        sizes="min(100vw, 1124px)"
-      />
+    <gallery-container bind:this={galleryContainer} onclick={(event: Event) => reorderImage(event)}>
+      <picture>
+        <source srcset="images/nestor-1.webp" type="image/webp" />
+        <img src="images/nestor-1.jpg" alt="Nestor Schoonbroodt" width="684" height="780" />
+      </picture>
+      <picture>
+        <source srcset="images/nestor-2.webp" type="image/webp" />
+        <img src="images/nestor-2.jpg" alt="Nestor Schoonbroodt" width="1040" height="780" />
+      </picture>
+      <picture>
+        <source srcset="images/nestor-3.webp" type="image/webp" />
+        <img src="images/nestor-3.jpg" alt="Nestor Schoonbroodt" width="1103" height="780" />
+      </picture>
+      <picture>
+        <source srcset="images/nestor-4.webp" type="image/webp" />
+        <img src="images/nestor-4.jpg" alt="Nestor Schoonbroodt" width="1054" height="780" />
+      </picture>
+      <picture>
+        <source srcset="images/nestor-5.webp" type="image/webp" />
+        <img src="images/nestor-5.jpg" alt="Nestor Schoonbroodt" width="1055" height="780" />
+      </picture>
+      <picture>
+        <source srcset="images/nestor-6.webp" type="image/webp" />
+        <img src="images/nestor-6.jpg" alt="Nestor Schoonbroodt" width="904" height="780" />
+      </picture>
+      <picture>
+        <source srcset="images/nestor-7.webp" type="image/webp" />
+        <img src="images/nestor-7.jpg" alt="Nestor Schoonbroodt" width="535" height="780" />
+      </picture>
+      <picture>
+        <source srcset="images/nestor-8.webp" type="image/webp" />
+        <img src="images/nestor-8.jpg" alt="Nestor Schoonbroodt" width="583" height="780" />
+      </picture>
+      <picture>
+        <source srcset="images/nestor-9.webp" type="image/webp" />
+        <img src="images/nestor-9.jpg" alt="Nestor Schoonbroodt" width="574" height="780" />
+      </picture>
+      <picture>
+        <source srcset="images/nestor-10.webp" type="image/webp" />
+        <img src="images/nestor-10.jpg" alt="Nestor Schoonbroodt" width="535" height="780" />
+      </picture>
+      <picture>
+        <source srcset="images/nestor-11.webp" type="image/webp" />
+        <img src="images/nestor-11.jpg" alt="Nestor Schoonbroodt" width="1165" height="780" />
+      </picture>
+      <picture>
+        <source srcset="images/nestor-12.webp" type="image/webp" />
+        <img src="images/nestor-12.jpg" alt="Nestor Schoonbroodt" width="1113" height="780" />
+      </picture>
+      <picture>
+        <source srcset="images/nestor-13.webp" type="image/webp" />
+        <img src="images/nestor-13.jpg" alt="Nestor Schoonbroodt" width="585" height="780" />
+      </picture>
+      <picture>
+        <source srcset="images/nestor-14.webp" type="image/webp" />
+        <img src="images/nestor-14.jpg" alt="Nestor Schoonbroodt" width="679" height="780" />
+      </picture>
+      <picture>
+        <source srcset="images/nestor-15.webp" type="image/webp" />
+        <img src="images/nestor-15.jpg" alt="Nestor Schoonbroodt" width="664" height="780" />
+      </picture>
+      <picture>
+        <source srcset="images/nestor-16.webp" type="image/webp" />
+        <img src="images/nestor-16.jpg" alt="Nestor Schoonbroodt" width="1040" height="780" />
+      </picture>
+      <picture>
+        <source srcset="images/nestor-17.webp" type="image/webp" />
+        <img src="images/nestor-17.jpg" alt="Nestor Schoonbroodt" width="1124" height="780" />
+      </picture>
     </gallery-container>
     <button onclick={() => showNextImageInQueue()}>Photo suivante</button>
   </pictures-container>
@@ -771,18 +716,21 @@
       overflow-x: hidden;
     }
 
-    :global(picture) {
+    picture {
       position: absolute;
       max-width: 100%;
-      height: auto;
-      max-height: 780px;
       display: flex;
       justify-content: center;
       align-items: center;
-      height: auto;
       left: 0;
       right: 0;
       margin: auto;
+      height: auto;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
     }
 
     button {
