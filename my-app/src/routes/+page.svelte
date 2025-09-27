@@ -130,6 +130,7 @@
     src="/static/images/nestor-portrait.jpg"
     alt="Portrait de Nestor Schoonbroodt"
     width="200"
+    sizes="min(100vw, 200px)"
   />
   <h1>Nestor Schoonbroodt</h1>
   <p>
@@ -431,102 +432,119 @@
         alt="Nestor Schoonbroodt"
         width="684"
         height="780"
+        sizes="min(100vw, 684px)"
       />
       <enhanced:img
         src="/static/images/nestor-2.jpg"
         alt="Nestor Schoonbroodt"
         width="1040"
         height="780"
+        sizes="min(100vw, 1040px)"
       />
       <enhanced:img
         src="/static/images/nestor-3.jpg"
         alt="Nestor Schoonbroodt"
         width="1103"
         height="780"
+        sizes="min(100vw, 1103px)"
       />
       <enhanced:img
         src="/static/images/nestor-4.jpg"
         alt="Nestor Schoonbroodt"
         width="1054"
         height="780"
+        sizes="min(100vw, 1054px)"
       />
       <enhanced:img
         src="/static/images/nestor-5.jpg"
         alt="Nestor Schoonbroodt"
         width="1055"
         height="780"
+        sizes="min(100vw, 1055px)"
       />
       <enhanced:img
         src="/static/images/nestor-6.jpg"
         alt="Nestor Schoonbroodt"
         width="904"
         height="780"
+        sizes="min(100vw, 904px)"
       />
       <enhanced:img
         src="/static/images/nestor-7.jpg"
         alt="Nestor Schoonbroodt"
         width="535"
         height="780"
+        sizes="min(100vw, 535px)"
       />
       <enhanced:img
         src="/static/images/nestor-8.jpg"
         alt="Nestor Schoonbroodt"
         width="583"
         height="780"
+        sizes="min(100vw, 583px)"
       />
       <enhanced:img
         src="/static/images/nestor-9.jpg"
         alt="Nestor Schoonbroodt"
         width="574"
         height="780"
+        sizes="min(100vw, 574px)"
       />
       <enhanced:img
         src="/static/images/nestor-10.jpg"
         alt="Nestor Schoonbroodt"
         width="535"
         height="780"
+        sizes="min(100vw, 535px)"
       />
       <enhanced:img
         src="/static/images/nestor-11.jpg"
         alt="Nestor Schoonbroodt"
         width="1165"
         height="780"
+        sizes="min(100vw, 1165px)"
       />
       <enhanced:img
         src="/static/images/nestor-12.jpg"
         alt="Nestor Schoonbroodt"
         width="1113"
         height="780"
+        sizes="min(100vw, 1113px)"
       />
       <enhanced:img
         src="/static/images/nestor-13.jpg"
         alt="Nestor Schoonbroodt"
         width="585"
         height="780"
+        sizes="min(100vw, 585px)"
       />
       <enhanced:img
         src="/static/images/nestor-14.jpg"
         alt="Nestor Schoonbroodt"
         width="679"
         height="780"
+        sizes="min(100vw, 679px)"
       />
       <enhanced:img
         src="/static/images/nestor-15.jpg"
         alt="Nestor Schoonbroodt"
         width="664"
         height="780"
+        sizes="min(100vw, 664px)"
       />
       <enhanced:img
         src="/static/images/nestor-16.jpg"
         alt="Nestor Schoonbroodt"
         width="1040"
         height="780"
+        sizes="min(100vw, 1040px)"
       />
       <enhanced:img
         src="/static/images/nestor-17.jpg"
         alt="Nestor Schoonbroodt"
         width="1124"
         height="780"
+        sizes="min(100vw, 1124px)"
       />
     </gallery-container>
     <button onclick={() => showNextImageInQueue()}>Photo suivante</button>
