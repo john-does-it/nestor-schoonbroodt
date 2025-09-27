@@ -121,10 +121,10 @@
 
 <header>
   <!-- prettier-ignore -->
-  <video autoplay loop muted playsinline disablePictureInPicture poster="">
-     <source src="/static/videos/clouds-loop.mp4" type="video/webm" />
-    <source src="/static/videos/clouds-loop.mp4" type="video/mp4" />
-    Votre navigateur ne supporte pas la vidéo HTML5.
+  <video autoplay loop muted playsinline disablePictureInPicture>
+     <source src="/videos/clouds-loop.webm" type="video/webm" />
+     <source src="/videos/clouds-loop.mp4" type="video/mp4" />
+     Votre navigateur ne supporte pas la vidéo HTML5.
   </video>
   <blockquote>
     <p>J'aime les nuages... les nuages qui passent... là-bas... les merveilleux nuages !</p>
