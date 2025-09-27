@@ -528,8 +528,8 @@
 
 <style>
   nav {
-    width: fit-content;
     display: flex;
+    width: fit-content;
     align-items: center;
     position: absolute;
     top: 1em;
@@ -560,6 +560,11 @@
       text-decoration: none;
       color: white;
       font-weight: bold;
+      font-size: 5vw;
+
+      @media (min-width: 272px) {
+        font-size: 16px;
+      }
     }
   }
 
