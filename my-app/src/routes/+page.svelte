@@ -517,13 +517,18 @@
   </thanks-container>
 </main>
 <footer>
-  <small>
+  <p>
     En sa mémoire, vous pouvez effectuer un don à l'association
     <a href="https://www.ilesdepaix.org/" title="Accéder au site de l'association Iles de Paix">
       Iles de Paix
     </a>
     sur le compte IBAN BE97 0000 0000 4949
-  </small>
+  </p>
+  <p>
+    <small>
+      <a href="/credits">Crédits</a>
+    </small>
+  </p>
 </footer>
 
 <style>
@@ -766,5 +771,13 @@
     text-align: center;
     padding: 2em 1em;
     background-color: #f0f0f0;
+
+    p {
+      font-size: 16px;
+    }
+
+    small {
+      color: #5c5c5c;
+    }
   }
 </style>
