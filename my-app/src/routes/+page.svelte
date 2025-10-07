@@ -792,7 +792,7 @@
 
   footer {
     text-align: center;
-    padding: 2em 1em;
+    padding: 2em 1em 0.5em;
     background-color: #f0f0f0;
 
     p {
@@ -800,6 +800,7 @@
     }
 
     small {
+      font-size: 8px;
       color: #5c5c5c;
     }
   }
