@@ -173,11 +173,9 @@
         <li>
           <button id="eloge-jonathan">Jonathan</button>
         </li>
-        <!-- 
         <li>
           <button id="cathy">Cathy</button>
         </li>
-        -->
         <li>
           <button id="philippe">Philippe</button>
         </li>
@@ -355,21 +353,46 @@
         <figcaption><author>Jonathan Schoonbroodt</author></figcaption>
       </figure>
     </wrapper-container>
-    <!-- 
     <wrapper-container class="text-container" name="cathy">
       <h3>Témoignage de Cathy</h3>
       <figure>
         <blockquote>
+          <p>Pépé, Totor, Papa,</p>
+          <p>Papa : ce petit mot universel de 4 lettres te correspond si bien…</p>
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi voluptatum nobis nihil
-            officia reprehenderit magni maiores praesentium recusandae quibusdam nemo quia ducimus
-            unde nam quam autem, dolores, ea dolorem nisi.
+            PAPA avec P comme Partage / Passion / Poésie / Potager / Pacifique / Poterie,
+            avec A comme Amitié / Artiste / Aventurier / Artisan et aussi… Atypique.
           </p>
+          <p>
+            Philippe, Joe, Jonathan et moi avons un papa atypique, original, inhabituel —
+            et ne vois en ces qualificatifs rien de péjoratif ou négatif.
+          </p>
+          <p>
+            Je ne pourrais citer tous les événements de ta longue vie mouvementée qui te
+            caractérisent et qui font de toi un papa hors norme.
+          </p>
+          <p>
+            Je retiendrai ton attirance pour la technique, le jardinage, les voyages, la lecture,
+            les arbres, l'art, la nature, la chanson française, les randonnées, la musique
+            classique, les préparations culinaires et autres distillations, et encore bien d'autres
+            intérêts.
+          </p>
+          <p>
+            Personnellement, je garderai le souvenir de ce voyage de plusieurs mois que nous avons
+            partagé en 1986 jusqu'au Mali puis Niger.
+          </p>
+          <p>
+            15.000 km à deux en jeep… Ça rapproche.
+          </p>
+          <p>
+            Une aventure sans heurt, sans dispute, avec la découverte de déserts sublimes et de
+            belles rencontres comme tu les appréciais.
+          </p>
+          <p>Au revoir Papa. Repose en paix.</p>
         </blockquote>
         <figcaption><author>Marie-Catherine Schoonbroodt</author></figcaption>
       </figure>
     </wrapper-container>
-    -->
     <wrapper-container class="text-container" name="philippe">
       <h3>Témoignage de Philippe</h3>
       <figure>
