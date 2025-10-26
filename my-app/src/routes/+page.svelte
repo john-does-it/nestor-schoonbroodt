@@ -256,7 +256,7 @@
           </p>
           <p>
             Tu m'as appris que le travail était une vertu, toi qui, bien après l'âge de la pension,
-            rentrais encore à la maison tard dans la soirée puis te mettait à ta grande table à
+            rentrais encore à la maison tard dans la soirée puis te mettais à ta grande table à
             dessin en rentrant, te plongeant dans des schémas hydrauliques complexes (auxquels je
             n'ai jamais rien compris)…
           </p>
@@ -281,7 +281,7 @@
             de couchage pour dormir sur une plage en Sicile...
           </p>
           <p>
-            Ta vie a été riche. Ou plutôt, devrai-je dire tes vies : car tu en as eu mille, ou
+            Ta vie a été riche. Ou plutôt, devrais-je dire tes vies : car tu en as eu mille, ou
             presque.
           </p>
           <p>
@@ -314,8 +314,7 @@
           <p>
             Rentré en Belgique, contraint et forcé par une Polonaise au caractère bien trempé, tu
             t'es également découvert une passion pour la sculpture, et j'aimais te voir dans ton
-            atelier, sublimer la terre, à l'occasion un bout de cigare, piqué à maman, au coin des
-            lèvres.
+            atelier, sublimer la terre.
           </p>
           <p>
             Ces dernières années, elles ont été bien difficiles : marquées par les pertes et le
@@ -360,12 +359,12 @@
           <p>Pépé, Totor, Papa,</p>
           <p>Papa : ce petit mot universel de 4 lettres te correspond si bien…</p>
           <p>
-            PAPA avec P comme Partage / Passion / Poésie / Potager / Pacifique / Poterie,
-            avec A comme Amitié / Artiste / Aventurier / Artisan et aussi… Atypique.
+            PAPA avec P comme Partage / Passion / Poésie / Potager / Pacifique / Poterie, avec A
+            comme Amitié / Artiste / Aventurier / Artisan et aussi… Atypique.
           </p>
           <p>
-            Philippe, Joe, Jonathan et moi avons un papa atypique, original, inhabituel —
-            et ne vois en ces qualificatifs rien de péjoratif ou négatif.
+            Philippe, Joe, Jonathan et moi avons un papa atypique, original, inhabituel — et ne vois
+            en ces qualificatifs rien de péjoratif ou négatif.
           </p>
           <p>
             Je ne pourrais citer tous les événements de ta longue vie mouvementée qui te
@@ -381,9 +380,7 @@
             Personnellement, je garderai le souvenir de ce voyage de plusieurs mois que nous avons
             partagé en 1986 jusqu'au Mali puis Niger.
           </p>
-          <p>
-            15.000 km à deux en jeep… Ça rapproche.
-          </p>
+          <p>15.000 km à deux en jeep… Ça rapproche.</p>
           <p>
             Une aventure sans heurt, sans dispute, avec la découverte de déserts sublimes et de
             belles rencontres comme tu les appréciais.
@@ -768,6 +765,8 @@
     img {
       max-width: 100%;
       height: auto;
+      max-height: 80vh;
+      object-fit: contain;
     }
 
     button {
