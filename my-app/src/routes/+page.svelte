@@ -10,11 +10,13 @@
 
   async function toggleTransition(event: MouseEvent) {
     const btn = (event.target as HTMLElement).closest('button') as HTMLButtonElement | null
+
     if (!btn) return
 
     for (const button of textSelectorContainer.querySelectorAll('button')) {
       button.classList.toggle('active', button.id === btn.id)
     }
+
     for (const container of textsContainer.querySelectorAll<HTMLElement>('.text-container')) {
       container.classList.toggle('active', container.getAttribute('name') === btn.id)
     }
@@ -40,6 +42,7 @@
 
   function reorderImage(event: Event) {
     const target = (event.target as HTMLElement).closest('img') as HTMLImageElement | null
+
     if (!target || !galleryContainer) return
 
     const imgs = [...galleryContainer.querySelectorAll<HTMLImageElement>('img')]
@@ -63,6 +66,7 @@
     if (!galleryContainer) return
 
     const imgs = [...galleryContainer.querySelectorAll<HTMLImageElement>('img')]
+
     if (imgs.length < 2) return
 
     // sort by current z (desc); missing z treated as 0
@@ -76,7 +80,14 @@
     let z = 100
 
     for (const img of imgs) {
-      img.style.zIndex = String(z--)
+      if (img.style.zIndex === '100') {
+        img.classList.add('rotateAway')
+      } else {
+        img.classList.remove('rotateAway')
+      }
+      setTimeout(() => {
+        img.style.zIndex = String(z--)
+      }, 600)
     }
   }
 
@@ -747,7 +758,6 @@
       justify-content: center;
       align-items: center;
       margin: auto;
-      overflow-x: hidden;
     }
 
     picture {
@@ -767,6 +777,10 @@
       height: auto;
       max-height: 80vh;
       object-fit: contain;
+
+      &:global(.rotateAway) {
+        animation: rotateAway 1s;
+      }
     }
 
     button {
