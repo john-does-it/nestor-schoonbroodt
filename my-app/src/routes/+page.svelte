@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount } from 'svelte'
 
-  import CarteSouvenir from '$lib/assets/carte-souvenir-nestor-schoonbroodt.pdf'
+  import CarteSouvenir from '#lib/assets/carte-souvenir-nestor-schoonbroodt.pdf'
 
   let textsContainer: HTMLElement
   let textSelectorContainer: HTMLElement

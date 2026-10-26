@@ -1,11 +1,11 @@
 <script lang="ts">
-  import favicon from '$lib/assets/favicon.svg'
-	import { dev } from '$app/environment'
-	import { injectAnalytics } from '@vercel/analytics/sveltekit'
+  import favicon from '#lib/assets/favicon.svg'
+  import { dev } from '$app/env'
+  // import { injectAnalytics } from '@vercel/analytics/sveltekit'
 
-	injectAnalytics({ mode: dev ? 'development' : 'production' })
-  
-  let { children } = $props()	
+  // injectAnalytics({ mode: dev ? 'development' : 'production' })
+
+  let { children } = $props()
 </script>
 
 <svelte:head>
