@@ -25,7 +25,7 @@ SvelteKit no longer sets `access-control-allow-origin: *` on every static asset 
 
 #### What to do
 
-If you rely on cross-origin access to static assets in dev, configure it in your Vite config by adding server.cors.origin = "*" to your config.
+If you rely on cross-origin access to static assets in dev, configure it in your Vite config by adding server.cors.origin = "\*" to your config.
 
 #### References
 
