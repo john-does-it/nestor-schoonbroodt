@@ -1,3 +1,5 @@
+import adapter from '@sveltejs/adapter-vercel'
+import { vitePreprocess } from '@sveltejs/vite-plugin-svelte'
 import { paraglideVitePlugin } from '@inlang/paraglide-js'
 import devtoolsJson from 'vite-plugin-devtools-json'
 import { enhancedImages } from '@sveltejs/enhanced-img'
@@ -7,7 +9,13 @@ import { defineConfig } from 'vite'
 export default defineConfig({
   plugins: [
     enhancedImages(),
-    sveltekit(),
+    sveltekit({
+      // Consult https://svelte.dev/docs/kit/integrations
+      // for more information about preprocessors
+      preprocess: vitePreprocess(),
+      runes: true,
+      adapter: adapter()
+    }),
     devtoolsJson(),
     paraglideVitePlugin({
       project: './project.inlang',
